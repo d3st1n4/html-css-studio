@@ -1,20 +1,44 @@
-#logoBar{
+h1 {
+  color: maroon;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#logoBar {
   width: 30vw;
   height: 100vh;
 }
-#siteLogo{
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  #logoBar {
+    width: 100vw;
+    height: auto;
+  }
+}
+#siteLogo {
   width: 100%;
 }
 body {
   display: flex;
+  background: antiquewhite;
 }
-#staffGallery{
-  width: 70vw;
-  display: inherit;
-
+#staffGallery {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.galleryImage{
+.card {
+  text-align: center;
+  background-color: cornsilk;
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.galleryImage {
   width: 100%;
-  height: auto;
   height: 300px;
 }
